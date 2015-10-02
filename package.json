@@ -1,0 +1,13 @@
+{
+  "name": "angular-hot-boilerplate-ts",
+  "version": "1.0.0",
+  "description": "An (almost) minimal dev environment to enable live-editing Typescript/AngularJS components.",
+  "scripts": {
+    "start": "webpack-dev-server --content-base app"
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "^1.6.1",
+    "webpack": "^1.12.2",
+    "webpack-dev-server": "^1.12.0"
+  }
+}
