@@ -6,12 +6,17 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
 	context: path.join(__dirname, '/src'), // sets the context path
-	entry: './app.js',  // the main app module
+	entry: './app.ts',  // the main app module
 	output: {
 		path: path.join(__dirname, 'dist'),
 		filename: 'bundle.js'
 		//publicPath: '/static/'
 	},
+	modules: {
+		loaders: {
+			test: '/\.ts$/', loader: 'ts'
+		}
+	},	
 	plugins: [
 		new webpack.HotModuleReplacementPlugin(),
 		new HtmlWebpackPlugin({
