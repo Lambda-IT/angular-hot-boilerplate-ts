@@ -23,7 +23,13 @@ module.exports = {
 			template: './src/index.html',
 			inject: 'body',
 			minify: false
-		})
+		}),
+		new webpack.ProvidePlugin({ // jquery, lodash and moment are now globaly available
+            $: "jquery",
+            jQuery: "jquery",
+			_: "lodash",
+			moment: "moment"
+        })
 	],
 }
 
