@@ -2,17 +2,35 @@
   "name": "angular-hot-boilerplate-ts",
   "version": "1.0.0",
   "description": "An (almost) minimal dev environment to enable live-editing Typescript/AngularJS components.",
+  "homepage": "https://github.com/rudini/angular-hot-boilerplate-ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rudini/angular-hot-boilerplate-ts.git"
+  },
+  "main": "app.js",
   "scripts": {
-    "start": "webpack-dev-server --content-base app"
+    "start": "webpack-dev-server --hot"
   },
   "devDependencies": {
     "html-webpack-plugin": "^1.6.1",
-    "ts-loader": "^0.5.5",
-    "webpack": "^1.12.2",
-    "webpack-dev-server": "^1.12.0",
-    "typescript": "^1.6.2"
+    "ng-annotate-webpack-plugin": "^0.1.2",
+    "ng-cache-loader": "0.0.13",
+    "ts-loader": "^0.5.4",
+    "typescript": "^1.6.0-beta",
+    "webpack": "^1.12.1",
+    "webpack-dev-server": "^1.10.1",
+    "css-loader": "^0.18.0",
+    "extract-text-webpack-plugin": "^0.8.2",
+    "file-loader": "^0.8.4",
+    "less": "^2.5.1",
+    "less-loader": "^2.2.0",
+    "lodash-node": "^3.10.1",
+    "style-loader": "^0.12.3",
+    "url-loader": "^0.5.6"
   },
   "dependencies": {
+    "angular": "^1.4.7",
+    "angular-ui-router": "^0.2.15",
     "jquery": "^2.1.4",
     "lodash": "^3.10.1",
     "moment": "^2.10.6"
