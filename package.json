@@ -26,13 +26,16 @@
     "less-loader": "^2.2.0",
     "lodash-node": "^3.10.1",
     "style-loader": "^0.12.3",
-    "url-loader": "^0.5.6"
+    "url-loader": "^0.5.6",
+    "tslint-loader": "^1.0.2"
   },
   "dependencies": {
     "angular": "^1.4.7",
     "angular-ui-router": "^0.2.15",
     "jquery": "^2.1.4",
     "lodash": "^3.10.1",
-    "moment": "^2.10.6"
+    "moment": "^2.10.6",
+    "paper": "^0.9.24",
+    "rx": "^4.0.6"
   }
 }
